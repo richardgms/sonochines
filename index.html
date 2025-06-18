@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sono de Guerra - Técnicas Militares Chinesas para o Sono Perfeito</title>
+    <meta name="description" content="Descubra os segredos militares chineses que fazem soldados dormirem em 2 minutos. Técnicas milenares comprovadas.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de Progresso Fixa -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-badges">
+            <div class="badge" id="badge1">
+                <i class="fas fa-user-tie"></i>
+                <span>Recruta</span>
+            </div>
+            <div class="badge" id="badge2">
+                <i class="fas fa-medal"></i>
+                <span>Soldado</span>
+            </div>
+            <div class="badge" id="badge3">
+                <i class="fas fa-crown"></i>
+                <span>Guerreiro</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>TÉCNICAS MILITARES SECRETAS</span>
+                </div>
+                <h1 class="hero-title">
+                    Descubra os <span class="highlight">Segredos Militares Chineses</span> 
+                    que Fazem Soldados Dormirem em <span class="highlight-time">2 Minutos</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Técnicas milenares usadas pelo exército mais disciplinado do mundo. 
+                    Transforme sua batalha contra a insônia em vitória garantida.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-text">Taxa de Sucesso</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2min</span>
+                        <span class="stat-text">Para Adormecer</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">30 dias</span>
+                        <span class="stat-text">Garantia Total</span>
+                    </div>
+                </div>
+                <button class="cta-button primary" id="startMission">
+                    <i class="fas fa-rocket"></i>
+                    Iniciar Missão do Sono
+                </button>
+                <div class="hero-testimonial">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Depois de 15 anos de insônia, finalmente consigo dormir como um bebê!"</p>
+                        <span>- Maria S., São Paulo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="military-badge">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div class="floating-elements">
+                    <div class="element element-1"><i class="fas fa-moon"></i></div>
+                    <div class="element element-2"><i class="fas fa-bed"></i></div>
+                    <div class="element element-3"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nível 1: Quiz Gamificado -->
+    <section class="quiz-section hidden" id="level1">
+        <div class="container">
+            <div class="level-header">
+                <div class="level-badge">
+                    <i class="fas fa-user-tie"></i>
+                    <span>NÍVEL 1: RECRUTA INSONE</span>
+                </div>
+                <h2>Diagnóstico Militar do Sono</h2>
+                <p>Responda às perguntas para descobrir seu rank atual na batalha contra a insônia</p>
+            </div>
+
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar" id="quizProgress"></div>
+                    <span class="quiz-progress-text" id="quizProgressText">Pergunta 1 de 5</span>
+                </div>
+
+                <div class="quiz-card" id="quizCard">
+                    <div class="question-number" id="questionNumber">01</div>
+                    <h3 class="question-title" id="questionTitle">Quantas horas de sono você consegue por noite?</h3>
+                    <div class="question-options" id="questionOptions">
+                        <button class="option-button" data-score="1">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Menos de 4 horas</span>
+                        </button>
+                        <button class="option-button" data-score="2">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">4-6 horas</span>
+                        </button>
+                        <button class="option-button" data-score="3">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">6-8 horas</span>
+                        </button>
+                        <button class="option-button" data-score="4">
+                            <span class="option-letter">D</span>
+                            <span class="option-text">Mais de 8 horas</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultado do Quiz -->
+    <section class="quiz-result hidden" id="quizResult">
+        <div class="container">
+            <div class="result-card">
+                <div class="result-badge" id="resultBadge">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 id="resultTitle">Seu Rank Militar: Recruta Insone</h2>
+                <p id="resultDescription">Você está no início da jornada. Precisa de treinamento intensivo para conquistar o sono perfeito.</p>
+                <div class="result-stats">
+                    <div class="result-stat">
+                        <span class="stat-label">Nível de Insônia:</span>
+                        <span class="stat-value" id="insomniaLevel">Alto</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="stat-label">Urgência de Tratamento:</span>
+                        <span class="stat-value" id="urgencyLevel">Crítica</span>
+                    </div>
+                </div>
+                <div class="achievement-unlocked">
+                    <i class="fas fa-trophy"></i>
+                    <span>Conquista Desbloqueada: "Recruta Identificado"</span>
+                </div>
+                <button class="cta-button primary" id="continueToLevel2">
+                    <i class="fas fa-arrow-right"></i>
+                    Avançar para Treinamento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nível 2: Preview das Técnicas -->
+    <section class="techniques-section hidden" id="level2">
+        <div class="container">
+            <div class="level-header">
+                <div class="level-badge">
+                    <i class="fas fa-medal"></i>
+                    <span>NÍVEL 2: SOLDADO EM TREINAMENTO</span>
+                </div>
+                <h2>Preview das Técnicas Militares</h2>
+                <p>Aprenda as primeiras técnicas básicas usadas pelos soldados chineses</p>
+            </div>
+
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-number">01</div>
+                    <div class="technique-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Respiração 4-7-8 Militar</h3>
+                    <p>Técnica de respiração controlada que reduz o sistema nervoso em 30 segundos.</p>
+                    <div class="technique-steps">
+                        <div class="step">Inspire por 4 segundos</div>
+                        <div class="step">Segure por 7 segundos</div>
+                        <div class="step">Expire por 8 segundos</div>
+                    </div>
+                </div>
+
+                <div class="technique-card">
+                    <div class="technique-number">02</div>
+                    <div class="technique-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Relaxamento Muscular Progressivo</h3>
+                    <p>Método militar para eliminar tensões físicas acumuladas durante o dia.</p>
+                    <div class="technique-steps">
+                        <div class="step">Contraia músculos por 5s</div>
+                        <div class="step">Relaxe completamente</div>
+                        <div class="step">Sinta a diferença</div>
+                    </div>
+                </div>
+
+                <div class="technique-card">
+                    <div class="technique-number">03</div>
+                    <div class="technique-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visualização do Campo de Batalha</h3>
+                    <p>Técnica de foco mental que desliga pensamentos intrusivos instantaneamente.</p>
+                    <div class="technique-steps">
+                        <div class="step">Visualize cenário calmo</div>
+                        <div class="step">Foque nos detalhes</div>
+                        <div class="step">Mantenha concentração</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-video">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <h4>Demonstração Prática</h4>
+                        <p>Veja como aplicar essas técnicas na prática (2 minutos)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-unlocked">
+                <i class="fas fa-trophy"></i>
+                <span>Conquista Desbloqueada: "Soldado Iniciante"</span>
+            </div>
+
+            <button class="cta-button primary" id="continueToLevel3">
+                <i class="fas fa-crown"></i>
+                Tornar-se Guerreiro do Sono
+            </button>
+        </div>
+    </section>
+
+    <!-- Nível 3: Oferta Principal -->
+    <section class="offer-section hidden" id="level3">
+        <div class="container">
+            <div class="level-header">
+                <div class="level-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>NÍVEL 3: GUERREIRO DO DESCANSO</span>
+                </div>
+                <h2>Arsenal Completo do Sono Perfeito</h2>
+                <p>Desbloqueie todas as 27 técnicas militares chinesas e torne-se um mestre do sono</p>
+            </div>
+
+            <div class="offer-container">
+                <div class="product-showcase">
+                    <div class="ebook-cover">
+                        <div class="ebook-mockup">
+                            <i class="fas fa-book"></i>
+                            <h3>Sono de Guerra</h3>
+                            <p>Técnicas Militares Chinesas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-content">
+                        <div class="urgency-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>Oferta Limitada:</span>
+                            <div class="countdown" id="countdown">
+                                <span id="hours">23</span>h
+                                <span id="minutes">59</span>m
+                                <span id="seconds">45</span>s
+                            </div>
+                        </div>
+
+                        <div class="price-container">
+                            <span class="original-price">De R$ 97</span>
+                            <span class="current-price">Por apenas R$ 47</span>
+                            <span class="discount-badge">51% OFF</span>
+                        </div>
+
+                        <div class="what-included">
+                            <h4>🎯 O que você vai receber:</h4>
+                            <div class="included-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ebook com 27 Técnicas Militares Chinesas Completas</span>
+                            </div>
+                            <div class="included-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Protocolo de Emergência: Durma em 2 Minutos</span>
+                            </div>
+                            <div class="included-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Guia de Disciplina Militar para o Sono</span>
+                            </div>
+                        </div>
+
+                        <div class="bonuses">
+                            <h4>🎁 Bônus Exclusivos (Valor: R$ 197):</h4>
+                            <div class="bonus-item">
+                                <div class="bonus-icon">
+                                    <i class="fas fa-headphones"></i>
+                                </div>
+                                <div class="bonus-content">
+                                    <h5>Áudio Guiado das Técnicas</h5>
+                                    <p>15 exercícios narrados para prática imediata</p>
+                                </div>
+                            </div>
+                            <div class="bonus-item">
+                                <div class="bonus-icon">
+                                    <i class="fas fa-list-check"></i>
+                                </div>
+                                <div class="bonus-content">
+                                    <h5>Checklist do Soldado do Sono</h5>
+                                    <p>Rotina completa para otimizar seu descanso</p>
+                                </div>
+                            </div>
+                            <div class="bonus-item">
+                                <div class="bonus-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="bonus-content">
+                                    <h5>Protocolo de Emergência 2min</h5>
+                                    <p>Para noites críticas de insônia severa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guarantee">
+                            <div class="guarantee-badge">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="guarantee-text">
+                                <h5>Garantia Militar de 30 Dias</h5>
+                                <p>Se não dormir melhor em 30 dias, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+                            </div>
+                        </div>
+
+                        <button class="cta-button primary large" id="purchaseButton">
+                            <i class="fas fa-crown"></i>
+                            Conquistar Sono Perfeito Agora
+                        </button>
+
+                        <div class="security-badges">
+                            <div class="security-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Pagamento 100% Seguro</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-download"></i>
+                                <span>Acesso Imediato</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Funciona em Qualquer Dispositivo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h3>Depoimentos de Ex-Soldados do Sono</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Incrível! Pela primeira vez em anos consigo dormir sem medicação. As técnicas são realmente eficazes!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Paula, 34 anos</strong>
+                        <span>Executiva, Rio de Janeiro</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Minha produtividade no trabalho aumentou 300% depois que comecei a dormir direito com essas técnicas."</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Mendes, 42 anos</strong>
+                        <span>Empresário, São Paulo</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Como mãe de gêmeos, achei que nunca mais dormiria bem. Essas técnicas salvaram minha sanidade!"</p>
+                    <div class="testimonial-author">
+                        <strong>Mariana Silva, 28 anos</strong>
+                        <span>Mãe e Enfermeira, Brasília</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sono de Guerra</h4>
+                    <p>Técnicas militares chinesas para o sono perfeito</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Suporte</h5>
+                    <p>contato@sonodeguerra.com</p>
+                    <p>WhatsApp: (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Garantia</h5>
+                    <p>30 dias de garantia total</p>
+                    <p>Suporte 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sono de Guerra. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Exit Intent Popup -->
+    <div class="popup-overlay hidden" id="exitPopup">
+        <div class="popup-content">
+            <button class="popup-close" id="closePopup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Última Chance!</h3>
+            </div>
+            <p>Não perca esta oportunidade única! Use o código <strong>SONO20</strong> e ganhe mais 20% de desconto.</p>
+            <div class="popup-price">
+                <span class="popup-original">R$ 47</span>
+                <span class="popup-final">R$ 37</span>
+            </div>
+            <button class="cta-button primary" id="finalOffer">
+                Aproveitar Desconto Final
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
