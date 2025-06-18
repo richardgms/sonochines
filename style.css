@@ -1239,6 +1239,11 @@ body {
         transform: none;
     }
 
+    .ebook-cover {
+        position: static;
+        top: auto;
+    }
+
     .techniques-grid {
         grid-template-columns: 1fr;
     }
