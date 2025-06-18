@@ -283,9 +283,17 @@ git push origin main
 - Rate limiting para formulários
 - Backup regular dos dados
 
-## 📞 Suporte
+## 📞 Suportefdsagffasfd
 
-Para dúvidas ou personalizações:
+Para dúvidas ou personalizações:dfsdafdasfda f3,3ads f
+dsa f
+das f
+dsaf 
+s
+f d
+sf
+sdg
+s
 - **Email**: dev@sonodeguerra.com
 - **WhatsApp**: (83) 98807-3784
 - **Documentação**: Este README
